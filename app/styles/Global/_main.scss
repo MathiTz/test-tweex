@@ -7,8 +7,6 @@
 
 /* Space out content a bit */
 body {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
   font-family: "Poppins", sans-serif;
 }
 
@@ -17,11 +15,8 @@ ul {
 }
 
 a {
+  color: white;
   text-decoration: none;
-
-  &:hover {
-    color: transparent;
-  }
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */

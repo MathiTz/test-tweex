@@ -1,0 +1,31 @@
+.header-apps {
+  color: white;
+  padding: 10px 10px;
+
+  & span {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #ec008c;
+  }
+
+  & h2 {
+    font-size: 3em;
+  }
+
+  & button {
+    background-color: #ec008c;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 30px;
+
+    &:hover {
+      outline: transparent;
+      transition: 0.2s background-color;
+      background-color: #ec008ebb;
+    }
+  }
+}
