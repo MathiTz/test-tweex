@@ -1,0 +1,25 @@
+.navigation-section {
+  background-color: #ec008c;
+  height: auto;
+
+  & ul {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & li {
+      padding: 20px 15px;
+    }
+  }
+
+  & .navigation__logo {
+    background-image: url("https://idx.digital/wp-content/themes/2018_indexdigital/source/img/logo-index.svg");
+    background-repeat: no-repeat;
+    color: transparent;
+
+    &:hover {
+      color: transparent;
+    }
+  }
+}

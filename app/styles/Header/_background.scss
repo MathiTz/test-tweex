@@ -1,4 +1,13 @@
 .main-header {
+  & .header-background {
+    background-image: url("../../images/005.jpg");
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 600px;
+    background-position: center;
+    background-position: cover;
+  }
+
   & .header-nav__logo {
     background-image: url("https://idx.digital/wp-content/themes/2018_indexdigital/source/img/logo-index.svg");
     background-repeat: no-repeat;
