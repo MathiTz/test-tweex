@@ -1,0 +1,20 @@
+.main-footer {
+  & ul {
+    display: flex;
+  }
+
+  & img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  & h3 {
+    margin-top: 0;
+    color: #ec008c;
+  }
+
+  & p {
+    font-size: 0.8em;
+  }
+}
