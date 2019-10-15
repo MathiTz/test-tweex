@@ -3,6 +3,11 @@
     display: flex;
   }
 
+  & span {
+    color: gray;
+    margin-left: 15px;
+  }
+
   @media screen and (max-width: 576px) {
     & ul {
       display: block;
@@ -22,6 +27,14 @@
   }
 
   & p {
-    font-size: 0.8em;
+    font-size: 1em;
+    line-height: 32px;
+  }
+
+  @media screen and (min-width: 577px) {
+    & img {
+      width: 350px;
+      height: 350px;
+    }
   }
 }

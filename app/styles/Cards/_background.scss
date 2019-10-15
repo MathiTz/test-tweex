@@ -1,16 +1,14 @@
 .cards-section {
   max-width: 100%;
 
-  & .cards-section__item-1 {
-    // display: none;
-  }
+  @media screen and (max-width: 480px) {
+    & .cards-section__item-2 {
+      display: none;
+    }
 
-  & .cards-section__item-2 {
-    display: none;
-  }
-
-  & .cards-section__item-3 {
-    display: none;
+    & .cards-section__item-3 {
+      display: none;
+    }
   }
 
   & ul {
