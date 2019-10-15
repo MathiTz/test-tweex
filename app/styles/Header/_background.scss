@@ -40,6 +40,16 @@
     align-items: center;
   }
 
+  @media screen and (min-width: 670px) {
+    & .header-nav__items {
+      display: flex !important;
+    }
+  }
+
+  & .header-nav__items {
+    display: none;
+  }
+
   & .header-nav__items li {
     padding: 10px 10px;
   }

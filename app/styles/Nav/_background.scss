@@ -1,33 +1,40 @@
 .navigation-section {
-  background-color: #ec008c;
-  height: auto;
+  display: none;
+}
 
-  & ul {
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+@media screen and (min-width: 670px) {
+  .navigation-section {
+    display: block;
+    background-color: #ec008c;
+    height: auto;
 
-    & li {
-      padding: 20px 15px;
+    & ul {
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      & li {
+        padding: 20px 15px;
+      }
     }
-  }
 
-  & a {
-    &:hover {
-      transition: 0.2s color;
-      color: #ccc;
-      text-decoration: none;
+    & a {
+      &:hover {
+        transition: 0.2s color;
+        color: #ccc;
+        text-decoration: none;
+      }
     }
-  }
 
-  & .navigation__logo {
-    background-image: url("https://idx.digital/wp-content/themes/2018_indexdigital/source/img/logo-index.svg");
-    background-repeat: no-repeat;
-    color: transparent;
-
-    &:hover {
+    & .navigation__logo {
+      background-image: url("https://idx.digital/wp-content/themes/2018_indexdigital/source/img/logo-index.svg");
+      background-repeat: no-repeat;
       color: transparent;
+
+      &:hover {
+        color: transparent;
+      }
     }
   }
 }
