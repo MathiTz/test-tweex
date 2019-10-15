@@ -26,13 +26,6 @@
     }
   }
 
-  & img {
-    max-width: 100%;
-    height: auto;
-    position: absolute;
-    z-index: -1;
-  }
-
   & ul {
     padding-top: 10px;
     display: flex;
@@ -44,6 +37,18 @@
     & .header-nav__items {
       display: flex !important;
     }
+
+    & .header-nav__icon {
+      display: none;
+    }
+  }
+
+  & .header-nav__icon {
+    filter: invert(100%);
+    margin-right: 15px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
   }
 
   & .header-nav__items {

@@ -2,11 +2,77 @@
   display: none;
 }
 
+.navigation__menu {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  background-color: #ec008c;
+  z-index: 2;
+
+  // @media screen and (max-width: 670px) {
+  //   & .navigation__icon--close {
+  //     display: inline;
+  //   }
+  // }
+
+  & .navigation__icon--close {
+    filter: invert(100%);
+    cursor: pointer;
+  }
+
+  & ul {
+    padding-left: 0;
+
+    & > li {
+      clear: both;
+      & .navigation__logo {
+        float: left;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+
+      & span {
+        float: right;
+      }
+    }
+
+    & .navigation__items li {
+      padding: 15px;
+      font-size: 1.2em;
+    }
+  }
+
+  & a {
+    &:hover {
+      transition: 0.2s color;
+      color: #ccc;
+      text-decoration: none;
+    }
+  }
+
+  & .navigation__logo {
+    background-image: url("https://idx.digital/wp-content/themes/2018_indexdigital/source/img/logo-index.svg");
+    background-repeat: no-repeat;
+    color: transparent;
+
+    &:hover {
+      color: transparent;
+    }
+  }
+}
+
 @media screen and (min-width: 670px) {
   .navigation-section {
     display: block;
     background-color: #ec008c;
     height: auto;
+
+    & .navigation__icon--close {
+      display: none;
+    }
 
     & ul {
       margin: 0;

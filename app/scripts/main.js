@@ -1,9 +1,13 @@
-console.log('\'Allo \'Allo!');
+const menuIcon = document.querySelector('.header-nav__icon');
 
-// Uncomment to enable Bootstrap tooltips
-// https://getbootstrap.com/docs/4.0/components/tooltips/#example-enable-tooltips-everywhere
-// $(function () { $('[data-toggle="tooltip"]').tooltip(); });
+const menuOpen = document.querySelector('.navigation-section');
 
-// Uncomment to enable Bootstrap popovers
-// https://getbootstrap.com/docs/4.0/components/popovers/#example-enable-popovers-everywhere
-// $(function () { $('[data-toggle="popover"]').popover(); });
+const menuClose = document.querySelector('.navigation__icon--close');
+
+menuIcon.addEventListener('click', () => {
+  menuOpen.classList.add('navigation__menu');
+});
+
+menuClose.addEventListener('click', () => {
+  menuOpen.classList.remove('navigation__menu');
+});
