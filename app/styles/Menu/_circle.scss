@@ -1,0 +1,30 @@
+.navigation-menu {
+  display: flex;
+  justify-content: center;
+  & ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 0;
+
+    & li {
+      cursor: pointer;
+      padding: 5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: gray;
+      margin: 0px 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .navigation-menu {
+    display: none;
+  }
+}
+
+.navigation-menu__item--checked {
+  background-color: #ec008c !important;
+}

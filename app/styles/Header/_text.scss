@@ -14,8 +14,28 @@
     background-color: #ec008c;
   }
 
+  @media screen and (max-width: 480px) {
+    & {
+      max-width: calc(100% - 50px);
+      padding: 10px 0px;
+    }
+
+    &.container > div {
+      padding-right: 0px !important;
+    }
+
+    & span {
+      background-color: blue;
+    }
+  }
+
   & h2 {
     font-size: 3em;
+  }
+
+  & h2,
+  & p {
+    width: calc(100% - 50px);
   }
 
   & button {

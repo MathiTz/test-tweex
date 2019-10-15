@@ -3,6 +3,13 @@
     display: flex;
   }
 
+  @media screen and (max-width: 576px) {
+    & ul {
+      display: block;
+      padding-left: 10px;
+    }
+  }
+
   & img {
     width: 100%;
     height: auto;
